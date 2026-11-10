@@ -13,6 +13,18 @@ print(data[0])
 
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 
-
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
+
+
+def paws_at_you(n):
+    question = input("What pokemon do you wanna see? Type a name to begin, type no to stop.")
+    for pokemon in data(n):
+        print(data[pokemon])
+        if question == "no":
+            print("fairs")
+        if question == data:
+            print(pokedex)
+paws_at_you()
+
+
 
