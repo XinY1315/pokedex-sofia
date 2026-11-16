@@ -25,24 +25,33 @@ types = open("./types", encoding = "utf10")
 data += json.load(types)
 print(data[2])
 
+def x(pokemon):
+    x == len(pokedex)
+
+
 def searching(n):
     start = input("What pokemon do you wanna see? Type a name to begin, type no to stop.")
     for pokemon in data(n):
         print(data[pokemon])
         if start == "no":
             print("fairs")
+        elif start == False[data]:
+            print("Not a pokemon, try again")
+        elif start == [pokedex+x]:
+            print([data[n]])
         else:
             start == data
             print(pokedex)
             language = input("What language do you want to see? Choose from English, Chinese, Japanese, and French.")
             if language == "English":
-                print(data[1])
+                print(pokedex[1])
             elif language == "Chinese":
-                print(data[2])
+                print(pokedex[2])
             elif language == "Japanese":
-                print(data[3])
+                print(pokedex[3])
             elif language == "French":
-                print(data[4])
+                print(pokedex[4])
+
 searching()
 
 
