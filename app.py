@@ -62,6 +62,13 @@ def words(data):
         print("that wasn't an option try again")
     return language
 
+def attack(data):
+    moves = input("Would you like to see the moves your pokemon can learn? If not, type no.")
+    if moves == "no":
+        print("la true")
+    elif moves == "yes":
+        
+
 def attributes(data):
     types = input("What type do you want to see? If you want to quit, type quit.")
     if types == "quit":
