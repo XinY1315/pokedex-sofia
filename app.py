@@ -33,6 +33,21 @@ def get_pokemon(pokemon):
 def get_moves(pokemon):
     x = get_moves(pokemon)
 
+def words(data):
+    language = input("What language do you want to see? Choose from English, Chinese, Japanese, and French.")
+    if language == "English":
+        print(pokedex[1])
+    elif language == "Chinese":
+        print(pokedex[2])
+    elif language == "Japanese":
+        print(pokedex[3])
+    elif language == "French":
+        print(pokedex[4])
+    else:
+        print("that wasn't an option try again")
+        language = input("What language do you want to see? Choose from English, Chinese, Japanese, and French.")
+    return language
+
 def searching(n):
     start = input("What pokemon do you wanna see? Type a name to begin, type no to stop.")
     for pokemon in data(n):
@@ -48,26 +63,32 @@ def searching(n):
             print(pokedex)
     return start
 
-def words(data):
-    language = input("What language do you want to see? Choose from English, Chinese, Japanese, and French.")
-    if language == "English":
-        print(pokedex[1])
-    elif language == "Chinese":
-        print(pokedex[2])
-    elif language == "Japanese":
-        print(pokedex[3])
-    elif language == "French":
-        print(pokedex[4])
-    else:
-        print("that wasn't an option try again")
-    return language
-
 def attack(data):
     moves = input("Would you like to see the moves your pokemon can learn? If not, type no.")
     if moves == "no":
         print("la true")
     elif moves == "yes":
-        
+        if types == "normal":
+            print("They can do this;" + [data[2]])
+        elif types == "fighting":
+            print("They can do this;" + [data[2]])
+        elif types == "flying":
+            print("They can do this;" + [data[2]])
+        elif types == "poison":
+            print("They can do this;" + [data[2]])   
+        elif types == "ground":
+            print("They can do this;" + [data[2]])
+        elif types == "rock":
+            print("They can do this;" + [data[2]])
+        elif types == "bug":
+            print("They can do this;" + [data[2]])
+        elif types == "ghost":
+            print("They can do this;" + [data[2]])
+        elif types == "steel":
+            print("They can do this;" + [data[2]])
+        elif types == "fire":
+            print("They can do this;" + [data[2]])
+             
 
 def attributes(data):
     types = input("What type do you want to see? If you want to quit, type quit.")
