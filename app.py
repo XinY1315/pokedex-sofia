@@ -18,20 +18,25 @@ print(data[0])
 import json
 moves = open("./moves.json", encoding = "utf9")
 data += json.load(moves)
-print(data[1])
+print(moves)
 
 import json
 types = open("./types", encoding = "utf10")
-data += json.load(types)
-print(data[2])
+print(types)
 
 def x(pokemon):
     x == len(pokedex)
 
-def get_pokemon(pokemon):
-    return pokemon
-def get_moves(pokemon):
-    x = get_moves(pokemon)
+def get_pokemon(pokedex):
+    return pokedex
+
+def get_moves(moves):
+    x = get_moves(data)
+    return moves
+
+def get_types(types):
+    return types
+
 
 def words(data):
     language = input("What language do you want to see? Choose from English, Chinese, Japanese, and French.")
