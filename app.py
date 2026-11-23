@@ -40,13 +40,13 @@ def get_types(types):
 
 def words(data):
     language = input("What language do you want to see? Choose from English, Chinese, Japanese, and French.")
-    if language == "English":
+    if language.lower or language.upper == "English":
         print(pokedex[1])
-    elif language == "Chinese":
+    elif language.lower or language.upper == "Chinese":
         print(pokedex[2])
-    elif language == "Japanese":
+    elif language.lower or language.upper == "Japanese":
         print(pokedex[3])
-    elif language == "French":
+    elif language.lower or language.upper == "French":
         print(pokedex[4])
     else:
         print("that wasn't an option try again")
@@ -74,25 +74,8 @@ def attack(data):
         print("la true")
     elif moves == "yes":
         if types == "normal":
-            print("They can do this;" + [data[2]])
-        elif types == "fighting":
-            print("They can do this;" + [data[2]])
-        elif types == "flying":
-            print("They can do this;" + [data[2]])
-        elif types == "poison":
-            print("They can do this;" + [data[2]])   
-        elif types == "ground":
-            print("They can do this;" + [data[2]])
-        elif types == "rock":
-            print("They can do this;" + [data[2]])
-        elif types == "bug":
-            print("They can do this;" + [data[2]])
-        elif types == "ghost":
-            print("They can do this;" + [data[2]])
-        elif types == "steel":
-            print("They can do this;" + [data[2]])
-        elif types == "fire":
-            print("They can do this;" + [data[2]])
+            print(moves)
+            print("look what they can do")
              
 
 def attributes(data):
