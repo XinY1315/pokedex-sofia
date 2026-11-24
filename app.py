@@ -83,7 +83,7 @@ def attributes(data):
     if types == "quit":
         print("a lying liar who lies")
     elif types == "normal":
-        print([get_pokemon])
+        print(pokedex[x][get_pokemon])
     elif types == "fighting":
         print([get_pokemon])
     elif types == "flying":
