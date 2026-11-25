@@ -21,7 +21,7 @@ data += json.load(moves)
 print(moves)
 
 import json
-types = open("./types", encoding = "utf10")
+types = open("./types", encoding = "utf7")
 print(types)
 
 def x(pokemon):
@@ -30,12 +30,13 @@ def x(pokemon):
 def get_pokemon(pokedex):
     return pokedex
 
-def get_moves(moves):
+def get_moves(utf9):
     x = get_moves(data)
-    return moves
+    return utf9
 
-def get_types(types):
-    return types
+def get_types(utf8):
+    x == types[utf8][data]
+    return utf8
 
 
 def words(data):
@@ -82,44 +83,11 @@ def attributes(data):
     types = input("What type do you want to see? If you want to quit, type quit.")
     if types == "quit":
         print("a lying liar who lies")
-    elif types == "normal":
-        print(pokedex[x][get_pokemon])
-    elif types == "fighting":
-        print([get_pokemon])
-    elif types == "flying":
-        print([get_pokemon])
-    elif types == "poison":
-        print([get_pokemon])
-    elif types == "ground":
-        print([get_pokemon])
-    elif types == "rock":
-        print([get_pokemon])
-    elif types == "bug":
-        print([get_pokemon])
-    elif types == "ghost":
-        print([get_pokemon])
-    elif types == "steel":
-        print([get_pokemon])
-    elif types == "fire":
-        print([get_pokemon])
-    elif types == "water":
-        print([get_pokemon])
-    elif types == "grass":
-        print([get_pokemon])
-    elif types == "electric":
-        print([get_pokemon])
-    elif types == "psychic":
-        print([get_pokemon])
-    elif types == "ice":
-        print([get_pokemon])
-    elif types == "dragon":
-        print([get_pokemon])
-    elif types == "dark":
-        print([get_pokemon])
-    elif types == "fairy":
-        print([get_pokemon])
+    elif types == pokedex("type"):
+        print("name"[words])
     else:
-        print("so thats not a type, try again")
+        print("not a pokemon, try again.")
+        print(types = input("What type do you want to see? If you want quit, type quit."))
     return types
 
 def get_pokemon(pokemon):
